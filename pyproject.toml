@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "chatfastapiddd"
+version = "0.1.0"
+description = ""
+authors = ["alermar69 <alermar69@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.119.0"
+uvicorn = {extras = ["standart"], version = "^0.37.0"}
+motor = "^3.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+ipython = "^9.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
