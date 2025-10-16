@@ -7,7 +7,7 @@ from domain.values.messages import Text, Title
 
 
 @dataclass
-class Message(BaseEntity):
+class Message:
     text: Text
 
     oid: str = field(
@@ -28,7 +28,7 @@ class Message(BaseEntity):
 
 
 @dataclass
-class Chat(BaseEntity):
+class Chat:
     title: Title
     messages: set[Message] = field(
         default_factory=set,
