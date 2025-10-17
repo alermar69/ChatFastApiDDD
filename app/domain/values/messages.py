@@ -12,8 +12,8 @@ class Text(BaseValueObject):
         if not self.value:
             raise EmptyTextException()
 
-    def as_generic_type(self):
-        return str(self.value) + "fff"
+    def as_generic_type(self) -> str:
+        return str(self.value)
 
 
 @dataclass(frozen=True)
